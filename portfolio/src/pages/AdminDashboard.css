@@ -1,0 +1,99 @@
+/* ✅ Full Page Styling */
+body {
+  background-image: url('https://www.jncreative.com/wp-content/uploads/2013/09/jn-creative-portfolio-background-1.jpg'); /* ✅ Removed extra quotes */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ✅ Admin Dashboard Card */
+.admin-dashboard {
+  max-width: 95%; 
+  width: 1400px; 
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffffaf;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ✅ Dashboard Heading */
+h2 {
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* ✅ Logout Button */
+.logout-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #cc0000;
+}
+
+/* ✅ Users Table */
+h3 {
+  margin-top: 20px;
+  color: #444;
+  font-size: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-table th, .user-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-table th {
+  background: #000000;
+  color: white;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.user-table tr:hover {
+  background: #f1f1f1;
+  transition: 0.3s;
+}
+
+.user-table td {
+  color: #333;
+}
+
+/* ✅ Delete Button */
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}

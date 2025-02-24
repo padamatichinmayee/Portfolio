@@ -1,0 +1,100 @@
+.dashboard-container {
+  width: 100vw;  /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0; 
+  padding: 20px;
+  background: rgb(0, 0, 0);
+  border-radius: 0; /* Remove border-radius for full coverage */
+  box-shadow: none; /* Remove box-shadow since it's fullscreen */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure content inside stretches properly */
+.dashboard-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  color: white; /* Allow scrolling if content overflows */
+}
+
+/* Keep the title centered */
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Adjust tabs styling */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+  
+}
+
+/* Buttons inside tabs */
+.tabs button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.tabs button.active {
+  color: #4a90e2;
+  border-bottom: 3px solid #4a90e2;
+  font-weight: bold;
+}
+
+/* Tab content area */
+.tab-content {
+  padding: 20px;
+  flex-grow: 1; /* Allow content to take remaining space */
+  
+  border-radius: 5px;
+  margin-top: 20px;
+  overflow-y: auto;
+  background-image: url('https://www.jncreative.com/wp-content/uploads/2013/09/jn-creative-portfolio-background-1.jpg'); /* ✅ Removed extra quotes */
+    background-size: cover;  /* ✅ Ensures the image covers the entire background */
+  background-position: center;  /* ✅ Centers the image */
+  background-repeat: no-repeat; 
+  
+}
+
+/* Button styling */
+.view-portfolio-btn {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hover effect */
+.view-portfolio-btn:hover {
+  background: #05b51f;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Disabled button */
+.view-portfolio-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}

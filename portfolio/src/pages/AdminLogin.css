@@ -1,0 +1,89 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* Full-screen Background */
+.admin-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://www.jncreative.com/wp-content/uploads/2013/09/jn-creative-portfolio-background-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Centered Admin Login Box */
+.admin-login-box {
+  width: 400px; 
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Heading */
+.admin-login-box h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+/* Input Fields */
+.admin-login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Button */
+.admin-login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-login-box button:hover {
+  background: #1e3c72;
+}
+
+/* Snackbar Alignment */
+.MuiSnackbar-root {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive Fix */
+@media (max-width: 600px) {
+  .admin-login-box {
+    width: 90%;
+  }
+}

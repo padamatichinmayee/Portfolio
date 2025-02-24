@@ -1,0 +1,108 @@
+
+
+/* General form container */
+.form-container {
+  background: #ffffffcc;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e1e1e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+/* Input fields */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4e4e4e;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: border 0.3s ease-in-out;
+  background: #ffffff00;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+/* Textarea adjustments */
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Submit button */
+.form-button {
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.form-button:hover {
+  background: #1db000e2;
+  color: #000000;
+  transition: 1s;
+}
+
+/* Disabled button */
+.form-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Message display */
+.form-message {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #28a745;
+}
+
+/* Error messages */
+.error-message {
+  color: #d9534f;
+}
+/* Profile Image Preview */
+.image-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-top: 10px;
+}
+

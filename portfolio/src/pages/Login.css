@@ -1,0 +1,126 @@
+/* Background styling */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.jncreative.com/wp-content/uploads/2013/09/jn-creative-portfolio-background-1.jpg'); /* ✅ Removed extra quotes */
+    background-size: cover;  /* ✅ Ensures the image covers the entire background */
+  background-position: center;  /* ✅ Centers the image */
+  background-repeat: no-repeat; 
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background: rgba(0, 0, 0, 0.729);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: rgb(243, 235, 235);
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Heading */
+  .login-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Input fields */
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    
+  }
+  
+  /* Button */
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .login-box input::placeholder {
+    color: #ddd;
+  }
+  
+  .login-box button:hover {
+    background: #0056b3;
+  }
+  
+  /* Signup link */
+  .signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+
+  }
+  
+  .signup-text span {
+    color: #00aaff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .signup-text span:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* ✅ Animated Alert Box */
+.alert {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out, fadeOut 0.5s ease-in-out 3s forwards;
+}
+
+/* Success Message */
+.alert.success {
+  background: #28a745;
+  color: white;
+}
+
+/* Error Message */
+.alert.error {
+  background: #dc3545;
+  color: white;
+}
+
+/* ✅ Fade In & Out Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+

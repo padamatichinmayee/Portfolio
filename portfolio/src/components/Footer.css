@@ -1,0 +1,43 @@
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ensure footer stays at the bottom of the viewport */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
